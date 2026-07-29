@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=devicewidth, initail -scale=1.0"> 
+    <title>HAPPPY 19th BIRTHDAY MY LOVE,MY EVT,MY WIFEY</title>
+    <link rel="stylesheet" herf="style.css">
+ </head>
+ <body>
+    <div class="ballons and flowers">🎈🎈🎈💐🌸💮🪷🌹</div>
+    
+    <div class="container">
+          <h1>HAPPY 19th BIRTHDAY</h1>
+          <h2>to my beautiful wifey,Ariana❤️😍</h2>
+          <h3>my one in million💐💐💐</h3>  
+    
+          <div class="cake">🎂</div>
+
+          <p class="message">
+           Today you turn 19! <br>
+           You are my sunshine, my best furture, and my evt❤️❤️💐😍
+           I am so lucky to celebrate you  
+          </p>
+              
+          <div class="reason">
+            <h3>19 Reasons I love you</h3>
+            <ul>
+               <li>You smile light up my day</li>
+               <li>The way you laugh</li>
+               <li>...and 16 more reasons only I know😉</li>
+            </ul>
+          </div>
+
+          <button onclick="showlove()">click for surprise</button>
+          <p id="surorise"></p>
+         </div>
+         <script>
+            function showlove () {
+               document.getElementsById("surprise").innerHTML=
+               "I love you to the moon and back, Ariana! Happy Birthday my queen❤️👑";
+               confetti(); 
+            }
+            // simple confetti effect
+            function confetti(){
+                for(let i=0; i<50; i++){
+                  let drop = document.createElement("div");
+                  drop.classlist.add("confetti");
+                  drop.style.left =math.random() * 100 + "vw";
+                  drop.style.backgroundColor ='hs(${math.random()*360},100%,50%)';
+                  document.body.appenChild(drop);
+                  setTimeout(()=>drop.remove(), 3000);      
+               }
+            } 
+         </script>
+ </body>
+</html>           
